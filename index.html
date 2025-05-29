@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="navbar">
+    <div class="site-title">cottrill</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="profile.html">me</a></li>
+        <li><a href="karakter.html">her</a></li>
+        <li><a href="archive.html">arkiv</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="captchaScreen">
+  <div class="captcha-box">
+    <p>ᯓ★ Verify you're not a robot</p>
+    <button onclick="enterSite()">I’m human ⭑.ᐟ</button>
+  </div>
+</div>
+
+<div id="mainContent" style="display: none;">
+  <main class="hero">
+
+  <main class="hero">
+    <div class="card" onclick="location.href='profile.html'">
+  <img src="celine d1.png" alt="Me" />
+  <p>me ⋆˚࿔</p>
+  </div>
+
+  <div class="card" onclick="location.href='karakter.html'">
+  <img src="clairo d1.png" alt="Clairo" />
+  <p>her ♡</p>
+  </div>
+
+  <div class="card" onclick="location.href='archive.html'">
+  <img src="clairo d2.png" alt="Archive" />
+  <p>arkiv ᶻ 𝗓 𐰁</p>
+  </div>
+  </main>
+
+  <script>
+    document.getElementById('revealTrigger').addEventListener('click', function () {
+      document.getElementById('cardContainer').classList.remove('hidden');
+      this.style.display = 'none';
+    });
+  </script>
+
+  </main>
+</div>
+<script>
+  function enterSite() {
+    document.getElementById('captchaScreen').style.display = 'none';
+    document.getElementById('mainContent').style.display = 'block';
+  }
+</script>
+
+<img src="my-cursor.gif" id="custom-cursor" />
+
+<script>
+  const cursor = document.getElementById("custom-cursor");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  });
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>arkiv - cottrill</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    .archive-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 60px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .site-title {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+      color: white;
+      font-size: 1.3rem;
+      text-transform: lowercase;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .tape-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 60px 20px;
+    }
+
+    .tape {
+      width: 300px; /* Adjust based on your actual image size */
+      transition: transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+      display: block;
+    }
+
+    .tape:hover {
+      transform: translateX(10px) rotate(-2deg);
+      filter: brightness(1.3);
+    }
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="site-title">𝄃𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="profile.html">me</a></li>
+        <li><a href="karakter.html">her</a></li>
+        <li><a href="archive.html">arkiv</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 class="archive-title">archive of her</h1>
+  
+  <div class="tape-stack">
+    <!-- Replace with your own images + song links -->
+    <a href="https://www.youtube.com/watch?v=74Z96Kgl4o0" target="_blank">
+      <img src="tape1.png" alt="Track 1" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=cEWBMNwfFZY" target="_blank">
+      <img src="tape2.png" alt="Track 2" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=F-va0XyntyU" target="_blank">
+      <img src="tape3.png" alt="Track 3" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=m0FEbQh6KwA" target="_blank">
+      <img src="tape4.png" alt="Track 1" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=AlUqhfyWnro" target="_blank">
+      <img src="tape5.png" alt="Track 2" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=vNftlyt96Kk" target="_blank">
+      <img src="tape6.png" alt="Track 3" class="tape">
+      <a href="https://www.youtube.com/watch?v=QKDkk4EcXD0" target="_blank">
+      <img src="tape7.png" alt="Track 3" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=BY4ZusX9YQk" target="_blank">
+      <img src="tape8.png" alt="Track 1" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=8JcPbTlkrR0" target="_blank">
+      <img src="tape9.png" alt="Track 2" class="tape">
+    </a>
+    <a href="https://www.youtube.com/watch?v=LsS4J7phr6U" target="_blank">
+      <img src="tape10.png" alt="Track 3" class="tape">
+    </a>
+  </div>
+  <footer>curated by claire cottrill. moments & memories. &copy; </footer>
+  <img src="my-cursor.gif" id="custom-cursor" />
+
+<script>
+  const cursor = document.getElementById("custom-cursor");
+
+  document.addEventListener("mousemove", function (e) {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  });
+</script>
+
+</body>
+</html>
+
+
+
